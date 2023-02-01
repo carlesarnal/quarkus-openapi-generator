@@ -13,6 +13,7 @@
   <name>Quarkus - Openapi Generator - Parent</name>
   <modules>
     <module>client</module>
+    <module>server</module>
   </modules>
   <properties>
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
@@ -25,6 +26,7 @@
     <version.org.assertj>3.23.1</version.org.assertj>
     <version.org.eclipse.microprofile.fault-tolerance>4.0.2</version.org.eclipse.microprofile.fault-tolerance>
     <version.com.github.tomakehurst>2.34.0</version.com.github.tomakehurst>
+    <vesion.apicurio.codegen>1.0.13.Final</vesion.apicurio.codegen>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -44,6 +46,16 @@
         <groupId>io.quarkiverse.openapi.generator</groupId>
         <artifactId>quarkus-openapi-generator</artifactId>
         <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkiverse.openapi.generator</groupId>
+        <artifactId>quarkus-openapi-generator-server</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.apicurio</groupId>
+        <artifactId>apicurio-codegen</artifactId>
+        <version>${vesion.apicurio.codegen}</version>
       </dependency>
       <dependency>
         <groupId>com.github.tomakehurst</groupId>

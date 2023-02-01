@@ -623,6 +623,12 @@ These are the known limitations of this pre-release version:
 
 We will work in the next few releases to address these use cases, until there please provide feedback for the current state of this extension. We also love contributions :heart:
 
+
+# Generating Server Stubs
+
+In addition to generating rest clients, this project now supports generating server stubs. This is based on Apicurio code generation capabilities and a separated Quarkus extension has been created.
+
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
